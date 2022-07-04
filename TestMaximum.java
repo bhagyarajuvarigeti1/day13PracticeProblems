@@ -26,4 +26,18 @@ public class TestMaximum {
         }
         return maxNumber;
     }
+    public String getMaximum(String s1, String s2, String s3){
+        if(s1.length() <= s2.length() && s1.length() <= s3.length()){
+            System.out.println(s1);
+            return s1;
+        }
+        else if(s2.length() <= s1.length() && s2.length() <= s3.length()){
+            System.out.println(s2);
+            return s2
+        }
+        else {
+            System.out.println(s3);
+            return s3;
+        }
+    }
 }
